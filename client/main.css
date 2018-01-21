@@ -1,0 +1,188 @@
+/* CSS declarations go here */
+.page-base-view {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  padding: 15px 0 30px;
+  flex-wrap: wrap;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(69, 173,167 , .5);
+  -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+  margin: 0;
+  color: #fefefe;
+}
+
+.page-base-view form {
+  display: flex;
+  height: 150px;
+  margin: 10px 0;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.page-base-view.login:after {
+  content: 'OR';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  z-index: 5;
+  height: 60px;
+  color: #595959;
+  position: absolute;
+  bottom: -30px;
+  background: #d8d8d8;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px #595959;
+}
+
+form input {
+  width: 250px;
+  height: 35px;
+  border: none;
+  outline: none;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: #d8d8d8;
+}
+
+button {
+  width: 80%;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+button i {
+  margin: 0 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: inset 1px 1px 5px;
+  color: rgba(125, 125, 125, 1);
+  border-color: rgba(125, 125, 125, 1);
+  background: rgba(125, 125, 125, .2);
+}
+
+.page-base-view.social-media {
+  padding-top: 35px;
+  background: #d8d8d8;
+}
+
+.page-base-view.social-media button {
+  margin: 10px 0;
+}
+
+button.facebook-connect {
+  background: rgba(75, 129, 201, .7);
+}
+
+button.twitter-connect {
+  background: rgba(123, 205, 247, .7);
+}
+
+.member-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.member-contact {
+  margin: 10px 0;
+  background: rgba(10, 10, 10, .1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.member-contact i {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #009fc5;
+}
+
+.member-contact i:hover {
+  color: #002851;
+}
+
+.chat-section {
+  bottom: 0;
+  right: 10%;
+  padding: 10px;
+  width: 250px;
+  background: #d8d8d8;
+  border: 1px solid #d9d9d9;
+  border-bottom: none;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 10px 10px 0 0;
+}
+
+.chat-section h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.chat-section input {
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-box div {
+  display: flex;
+}
+
+.chat-box div p {
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  position: relative;
+  background: #009fc5;
+  display: inline-block;
+}
+
+.chat-box .clear-message {
+  max-width: 150px;
+}
+
+.chat-box div.owner {
+  text-align: right;
+  align-self: flex-end;
+}
+
+.chat-box div.owner p {
+  background: #fff;
+  text-align: left;
+}
+
+.chat-box p:before {
+  content: ':';
+  position: absolute;
+  left: -8px;
+  top: 3px;
+}
+
+.chat-box div.owner p:before {
+  content: '';
+}
